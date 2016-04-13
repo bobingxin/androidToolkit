@@ -4,10 +4,12 @@ import android.util.Log;
 
 /**
  * Created by bbx on 16/4/13.
+ * 日志控制工具，方便在打包的时候屏蔽Log
  */
 public final class LogUtil {
 
-    private static final int LEVEL = 4;
+    //LEVEL为0时候不显示任何日志
+    public static int LEVEL = 4;
 
     public static void i(String tag,String msg){
         if(LEVEL > 0) {
